@@ -9,6 +9,12 @@
         "title": "Runners",
         "width": 3,
         "file": "runners.html"
+      },
+      {
+        "name": "orders",
+        "title": "Orders",
+        "width": 3,
+        "file": "orders.html"
       }
     ],
     "graphics": [

@@ -5,10 +5,10 @@
     "compatibleRange": "^2.0.0",
     "dashboardPanels": [
       {
-        "name": "count-up",
-        "title": "Count up",
-        "width": 1,
-        "file": "count-up.html"
+        "name": "runners",
+        "title": "Runners",
+        "width": 3,
+        "file": "runners.html"
       }
     ],
     "graphics": [

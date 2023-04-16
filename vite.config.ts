@@ -11,6 +11,7 @@ export default defineConfig({
       input: {
         'graphics/index': resolve(__dirname, 'graphics/index.html'),
         'dashboard/count-up': resolve(__dirname, 'dashboard/count-up.html'),
+        'dashboard/runners': resolve(__dirname, 'dashboard/runners.html'),
       },
     },
   },

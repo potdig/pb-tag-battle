@@ -4,7 +4,7 @@ import type { MessageMap } from '~/types/message'
 import type { ReplicantMap } from '~/types/replicant'
 
 export type NodeCG = CreateNodecgInstance<
-  'bundle-name',
+  'pb-tag-battle',
   BundleConfig,
   ReplicantMap,
   MessageMap

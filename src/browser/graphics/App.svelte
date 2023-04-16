@@ -7,7 +7,7 @@
   <div>
     <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
       <img
-        src="/assets/bundle-name/materials/vite.svg"
+        src="/assets/pb-tag-battle/materials/vite.svg"
         class="logo"
         alt="Vite Logo"
       />

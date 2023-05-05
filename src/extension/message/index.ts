@@ -1,8 +1,10 @@
 import type { NodeCG } from '../nodecg'
-import { listenForAddRunner } from './add-runner'
+import listenForAddRunner from './add-runner'
+import listenForUpdateCurrentGame from './update-current-game'
 
 export default function message(nodecg: NodeCG) {
   listenForAddRunner(nodecg)
+  listenForUpdateCurrentGame(nodecg)
 
   const countRep = nodecg.Replicant('count', { defaultValue: 0 })
 

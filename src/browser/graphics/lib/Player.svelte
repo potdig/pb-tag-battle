@@ -1,13 +1,19 @@
 <script lang="ts">
-  export let team: 'bub' | 'bob'
+  import { currentGame } from '~/browser/store/current-game'
+  import { orderOf } from '~/browser/store/orders'
+  import type { Team } from '~/types/team'
 
-  $: teamName = team === 'bub' ? 'BUBBLUN' : 'BOBBLUN'
+  export let team: Team
+
+  $: teamName = team === 'Bub' ? 'BUBBLUN' : 'BOBBLUN'
+  $: order = orderOf(team, $currentGame)
+  $: teamClass = team.toLowerCase()
 </script>
 
-<div class="player {team}">
+<div class="player {teamClass}">
   <div class="head">
     <p class="team">TEAM {teamName}</p>
-    <p class="name">タッキー</p>
+    <p class="name">{$order?.name}</p>
   </div>
   <div class="video-area" />
   <div class="timer-area" />

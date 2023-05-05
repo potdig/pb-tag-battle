@@ -1,6 +1,6 @@
 import type { NodeCG } from '../nodecg'
 
-export function listenForAddRunner(nodecg: NodeCG) {
+export default function listenForAddRunner(nodecg: NodeCG) {
   const runnersRep = nodecg.Replicant('runners', {
     defaultValue: [],
   })

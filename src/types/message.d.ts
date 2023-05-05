@@ -18,4 +18,8 @@ export type MessageMap = {
     data: AddRunnerArgs
     result: boolean
   }
+  updateCurrentGame: {
+    data: Game
+    result: boolean
+  }
 }

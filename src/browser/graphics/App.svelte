@@ -1,52 +1,46 @@
 <script lang="ts">
-  import svelteLogo from './assets/svelte.svg'
-  import Counter from './lib/Counter.svelte'
+  // import { currentGame } from '../store/current-game'
+  import Player from './lib/Player.svelte'
+  import title3dx from './assets/3DX.png'
+  import title2 from './assets/2.png'
+  import title1 from './assets/1.png'
+
+  const title = {
+    '3DX': '先鋒戦',
+    '2': '中堅戦',
+    '1': '大将戦',
+  }
+
+  // $: currentTitle = $currentGame ? title[$currentGame] : ''
 </script>
 
-<main>
-  <div>
-    <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-      <img
-        src="/assets/pb-tag-battle/materials/vite.svg"
-        class="logo"
-        alt="Vite Logo"
-      />
-    </a>
-    <a href="https://svelte.dev" target="_blank" rel="noreferrer">
-      <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
-    </a>
-  </div>
-  <h1>Vite + Svelte</h1>
-
-  <div class="card">
-    <Counter />
-  </div>
-
-  <p>
-    Check out <a
-      href="https://github.com/sveltejs/kit#readme"
-      target="_blank"
-      rel="noreferrer">SvelteKit</a
-    >, the official Svelte app framework powered by Vite!
-  </p>
-
-  <p class="read-the-docs">Click on the Vite and Svelte logos to learn more</p>
-</main>
+<div id="content">
+  <header>
+    <img src={title3dx} alt="title" />
+  </header>
+  <main>
+    <Player team="bub" />
+    <p>VS</p>
+    <Player team="bob" />
+  </main>
+</div>
 
 <style>
-  .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
+  #content {
+    padding: 2rem;
   }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
+
+  header img {
+    height: 120px;
   }
-  .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
+
+  main {
+    display: flex;
+    justify-content: space-between;
   }
-  .read-the-docs {
-    color: #888;
+
+  main p {
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 4em;
   }
 </style>

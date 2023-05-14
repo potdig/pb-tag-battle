@@ -22,4 +22,8 @@ export type MessageMap = {
     data: Game
     result: boolean
   }
+  updateResults: {
+    data: Result[]
+    result: boolean
+  }
 }

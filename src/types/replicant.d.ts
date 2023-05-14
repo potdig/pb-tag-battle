@@ -7,4 +7,5 @@ export type ReplicantMap = {
   runners: Runner[]
   orders: Order[]
   currentGame: Game
+  results: Result[]
 }

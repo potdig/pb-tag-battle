@@ -1,5 +1,10 @@
 <script lang="ts">
+  import { results } from '../store/results'
   import headerImg from '../graphics/assets/result.png'
+
+  $: result3dx = $results?.find(result => result.game === '3DX')?.won
+  $: result2 = $results?.find(result => result.game === '2')?.won
+  $: result1 = $results?.find(result => result.game === '1')?.won
 </script>
 
 <div id="content">
@@ -20,27 +25,39 @@
     </div>
 
     <div class="cell">
-      <span class="star">★</span>
+      {#if result3dx === 'Bub'}
+        <span class="star">★</span>
+      {/if}
     </div>
     <div class="cell mid">先鋒戦</div>
     <div class="cell">
-      <span class="star">★</span>
+      {#if result3dx === 'Bob'}
+        <span class="star">★</span>
+      {/if}
     </div>
 
     <div class="cell">
-      <span class="star">★</span>
+      {#if result2 === 'Bub'}
+        <span class="star">★</span>
+      {/if}
     </div>
     <div class="cell mid">中堅戦</div>
     <div class="cell">
-      <span class="star">★</span>
+      {#if result2 === 'Bob'}
+        <span class="star">★</span>
+      {/if}
     </div>
 
     <div class="cell">
-      <span class="star">★</span>
+      {#if result1 === 'Bub'}
+        <span class="star">★</span>
+      {/if}
     </div>
     <div class="cell mid">大将戦</div>
     <div class="cell">
-      <span class="star">★</span>
+      {#if result1 === 'Bob'}
+        <span class="star">★</span>
+      {/if}
     </div>
   </main>
 </div>

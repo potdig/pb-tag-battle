@@ -15,6 +15,12 @@
         "title": "Orders",
         "width": 3,
         "file": "orders.html"
+      },
+      {
+        "name": "results",
+        "title": "Results",
+        "width": 3,
+        "file": "results.html"
       }
     ],
     "graphics": [

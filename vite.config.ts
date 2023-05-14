@@ -14,6 +14,7 @@ export default defineConfig({
         'dashboard/count-up': resolve(__dirname, 'dashboard/count-up.html'),
         'dashboard/runners': resolve(__dirname, 'dashboard/runners.html'),
         'dashboard/orders': resolve(__dirname, 'dashboard/orders.html'),
+        'dashboard/results': resolve(__dirname, 'dashboard/results.html'),
       },
     },
   },

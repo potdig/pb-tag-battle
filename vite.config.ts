@@ -10,6 +10,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         'graphics/index': resolve(__dirname, 'graphics/index.html'),
+        'graphics/result': resolve(__dirname, 'graphics/result.html'),
         'dashboard/count-up': resolve(__dirname, 'dashboard/count-up.html'),
         'dashboard/runners': resolve(__dirname, 'dashboard/runners.html'),
         'dashboard/orders': resolve(__dirname, 'dashboard/orders.html'),

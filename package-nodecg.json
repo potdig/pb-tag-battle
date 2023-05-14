@@ -22,6 +22,11 @@
         "file": "index.html",
         "width": 1920,
         "height": 1080
+      },
+      {
+        "file": "result.html",
+        "width": 1920,
+        "height": 1080
       }
     ],
     "assetCategories": [
